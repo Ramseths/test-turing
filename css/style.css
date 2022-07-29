@@ -195,3 +195,35 @@ header .nav li a:hover {
     height: 100%;
     object-fit: cover;
 }
+
+.card {
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    padding: 90px 200px;
+}
+
+.card::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-image: url('https://www.tlnt.com/wp-content/uploads/sites/4/2018/11/technical-analytics-accounting-sales-700x467.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(0.5);
+}
+
+.card-inside {
+    position: relative;
+}
+
+.card-info {
+    color: #fff;
+}
