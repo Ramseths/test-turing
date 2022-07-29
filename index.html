@@ -33,25 +33,59 @@
     </section>
 
     <section class="about">
-        <h4>QUE REALIZAMOS</h4>
-        <h2>Contribuimos con su empresa para mejorar la toma de decisiones a través de sus datos.</h2>
-        <a href="#" class="btn">Más información</a>
-        <div class="service">
-            <div class="service-info">
-
+        <div class="container">
+            <h4 class="title">Qué realizamos</h4>
+            <h2>Contribuimos con su empresa para mejorar la toma de decisiones a través de sus datos.</h2>
+            <div class="about-btn">
+                <a href="#" class="btn">Más información</a>
             </div>
-            <div class="service-info">
-                <h4></h4>
-                <h3>Somos una empresa Consultora de Big Data en México, desde hace 13 años proporcionamos servicios en Business Analytics mediante Knowledge Discovery in Database (KDD).</h2>
+            <h4 class="title">La manera ideal para manejar tus datos</h4>
+            <div class="service">
+                <div class="service-img">
+                    <img src="https://res.cloudinary.com/jesusramseths/image/upload/v1659130783/cer-pmi_p2zgio.jpg" alt="">
+                </div>
+                <div class="service-info">
+                    <h3>Somos una empresa Consultora de Big Data en México, desde hace 13 años proporcionamos servicios en Business Analytics mediante Knowledge Discovery in Database (KDD).</h2>
+                </div>
             </div>
         </div>
+
     </section>
 
     <section class="tech">
-        <h4>TECNOLOGÍAS QUE UTILIZAMOS</h4>
-        <div class="tech-brands"></div>
+        <div class="container">
+            <h4 class="title">Tecnologías que utilizamos</h4>
+            <div class="tech-brands">
+                <div class="brand-logo">
+                    <img src="./assets/tecnoly-tableau.png" alt="Tableau">
+                </div>
+                <div class="brand-logo">
+                    <img src="./assets/salesforce.jpg" alt="Tableau">
+                </div>
+                <div class="brand-logo">
+                    <img src="./assets/scrum.png" alt="Tableau">
+                </div>
+                <div class="brand-logo">
+                    <img src="./assets/pmi2.png" alt="Tableau">
+                </div>
+            </div>
+        </div>
+
     </section>
 
+    <script type="text/javascript">
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+
+        function toggleMenu() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const nav = document.querySelector('.nav');
+            menuToggle.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+    </script>
 </body>
 
 </html>
