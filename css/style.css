@@ -20,7 +20,9 @@
 }
 
 .btn {
+    font-weight: bold;
     border: none;
+    padding: 15px;
     background-color: var(--secondary-color);
     color: #fff;
 }
@@ -169,6 +171,9 @@ header .nav li a:hover {
     align-items: center;
 }
 
+
+/* Tecnologías*/
+
 .tech {
     background-color: rgba(0, 0, 0, 0.056);
 }
@@ -226,6 +231,10 @@ header .nav li a:hover {
 
 .card-info {
     color: #fff;
+}
+
+.card-info p {
+    font-size: 20px;
 }
 
 

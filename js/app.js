@@ -8,4 +8,5 @@ const sr = ScrollReveal({
 /*SCROLL HOME*/
 sr.reveal('.about', { delay: 200 });
 sr.reveal('.tech', { delay: 200 });
-sr.reveal('.brand-logo', { interval: 200 })
+sr.reveal('.brand-logo', { interval: 200 });
+sr.reveal('.banner-info', { interval: 200 });
