@@ -33,6 +33,10 @@
     color: #fff;
 }
 
+.bg-turing {
+    background-color: rgba(0, 0, 0, 0.056);
+}
+
 html {
     box-sizing: border-box;
 }
