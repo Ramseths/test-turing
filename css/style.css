@@ -201,7 +201,7 @@ header .nav li a:hover {
     object-fit: cover;
 }
 
-.card {
+.card-s {
     position: relative;
     display: flex;
     text-align: center;
@@ -211,7 +211,7 @@ header .nav li a:hover {
     padding: 90px 200px;
 }
 
-.card::before {
+.card-s::before {
     content: " ";
     position: absolute;
     left: 0;
@@ -235,6 +235,10 @@ header .nav li a:hover {
 
 .card-info p {
     font-size: 20px;
+}
+
+.customers h4 {
+    margin-bottom: 20px;
 }
 
 
