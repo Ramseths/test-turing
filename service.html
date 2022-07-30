@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turing-IA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">TURING-IA</a>
+        <div class="menu-toggle" onclick="toggleMenu();"></div>
+        <ul class="nav">
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./about.html">Nosotros</a></li>
+            <li><a href="./service.html">Servicios</a></li>
+            <li><a href="#">Tableau</a></li>
+        </ul>
+    </header>
+
+    <section class="banner" id="banner">
+        <video src="https://drive.google.com/uc?export=download&id=1jW2wkRggl5WzQH4Y7DOcL22DA9bcb6H9" loop autoplay="play" muted id="vidp"></video>
+        <div class="banner-info">
+            <h1>Servicios</h1>
+            <h2>Tenemos una gran gama de soluciones para llevar al máximo el nivel tu compañia</h2>
+        </div>
+    </section>
+
+    <section>
+        <div class="container-s">
+            <h4 class="title mb-5 mt-5 text-center">Lo que ofrecemos</h4>
+            <div class="row">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="https://turing-ia.com/assets/img/servicios.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-7 mt-5 mb-2">
+                        <p class="fs-5 text-center">Proporcionamos a nuestros clientes una gama de productos y servicios relacionados con el analisis de datos, mediante el uso de tecnologias como Tableau, Salesforce, PMI, Scrum.</p>
+                    </div>
+                    <ul class="list-unstyled text-center m-0">
+                        <p class="fs-1 fw-bold text-center">Expertos en</p>
+                        <li>Tableau</li>
+                        <li>Business Intelligence.</li>
+                        <li>Business Analyst</li>
+                        <li>Data Analyst</li>
+                        <li>Machine Learning</li>
+                        <li>Inteligencia Artificial</li>
+                        <li>Data Mining</li>
+                        <li>Big Data</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="p-5">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h2>Turing Inteligencia Artificial</h2>
+                    <p>Av. Insurgentes 601</p>
+                    <p>Col. Napoles, Benito Juarez</p>
+                    <p>Ciudad de México, México</p>
+                    <br>
+                    <p class="fw-bold">Teléfono de Contacto</p>
+                    <p>52 (722) 936-96-65</p>
+                    <p class="fw-bold">Correo electrónico</p>
+                    <p>contacto@turing-ia.com</p>
+                </div>
+                <div class="col-sm-6">
+                    <ul class="p-0 list-unstyled">
+                        <p class="fw-bold">Nuestros servicios</p>
+                        <hr>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light">Implementación de Proyectos (Business Analyst)</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light">Workshop (Blue Print)</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light">Capacitación</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light">Venta de Software</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light">Venta de Hardware</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light">Desarrollo de Aplicaciones</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light">Balanced Scorecard</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="footer-social">
+                    <a href="#" target="_blank" class="footer-icon"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" target="_blank" class="footer-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#" target="_blank" class="footer-icon"><i class='bx bxl-instagram'></i></a>
+                    <a href="#" target="_blank" class="footer-icon"><i class='bx bxl-twitter'></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+
+        function toggleMenu() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const nav = document.querySelector('.nav');
+            menuToggle.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+    </script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

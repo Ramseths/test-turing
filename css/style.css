@@ -127,6 +127,7 @@ header .nav li a:hover {
 .banner-info {
     color: #fff;
     position: absolute;
+    width: 50%;
     top: 300px;
     left: 150px;
     align-items: center;
@@ -135,6 +136,74 @@ header .nav li a:hover {
 
 .container {
     margin: 100px;
+}
+
+.container-s {
+    margin: 20px 50px;
+}
+
+@media (max-width: 991px) {
+    header,
+    header.sticky {
+        padding: 10px 20px
+    }
+    header .nav {
+        display: none;
+    }
+    header .nav.active {
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+    }
+    header .nav li {
+        margin-left: 0;
+    }
+    header .nav li a {
+        color: #111;
+        font-size: 1.6em;
+    }
+    .menu-toggle {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url('/assets/menu.png');
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menu-toggle.active {
+        background: url('/assets/close.png');
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: 0.3s;
+    }
+    header.sticky .menu-toggle {
+        filter: invert(1);
+    }
+    .banner .contenido h2 {
+        font-size: 3em;
+        color: #fff;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .row .col50 {
+        position: relative;
+        width: 100%;
+    }
+    .banner-info {
+        left: 20px;
+        width: 90%;
+    }
 }
 
 
