@@ -139,7 +139,13 @@ header .nav li a:hover {
 }
 
 .container-s {
-    margin: 20px 50px;
+    margin: 20px 100px;
+}
+
+@media (max-width: 768px) {
+    .container-s {
+        margin: 20px 50px;
+    }
 }
 
 @media (max-width: 991px) {

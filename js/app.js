@@ -27,4 +27,3 @@ sr.reveal('.banner-info', { interval: 200 });
 sr.reveal('#about-us', { interval: 200 });
 sr.reveal('#skills', { interval: 200 });
 sr.reveal('#scrum', { interval: 200 });
-sr.reveal('.card', { interval: 200 });
