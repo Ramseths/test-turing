@@ -37,6 +37,10 @@
     background-color: rgba(0, 0, 0, 0.056);
 }
 
+.bg-turing-2 {
+    background-color: var(--first-color);
+}
+
 html {
     box-sizing: border-box;
 }
